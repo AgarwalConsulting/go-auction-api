@@ -58,7 +58,7 @@ docker-compose up
         "lifetime": 0,
         "photo_url": "",
         "title": "THis is a test",
-        "created_by": "tariksetia",
+        "created_by": "AgarwalConsulting",
         "sold": false
     }
     ```
@@ -80,7 +80,7 @@ docker-compose up
     {
         "id": "5ca34c2f7688973f34f8dee1",
         "bid_price": 6832427,
-        "username": "tariksetia",
+        "username": "AgarwalConsulting",
         "offer_id": "5ca34ac07688973b556056ce",
         "timestamp": "2019-04-02T17:19:03.799762+05:30",
         "accepted": false
@@ -94,7 +94,7 @@ docker-compose up
     {
         "id": "5ca34c2f7688973f34f8dee1",
         "bid_price": 6832427,
-        "username": "tariksetia",
+        "username": "AgarwalConsulting",
         "offer_id": "5ca34ac07688973b556056ce",
         "timestamp": "2019-04-02T17:19:03.799+05:30",
         "accepted": true

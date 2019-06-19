@@ -13,7 +13,7 @@ import (
 var _ = Describe("User API", func() {
 	//SignUp
 	It("should create a new user", func() {
-		postData := []byte(`{"username":"tariksetia","password":"1234"}`)
+		postData := []byte(`{"username":"AgarwalConsulting","password":"1234"}`)
 		req, _ := http.NewRequest("POST", "/v1/signup", bytes.NewBuffer(postData))
 		response := httptest.NewRecorder()
 		r.ServeHTTP(response, req)
@@ -22,7 +22,7 @@ var _ = Describe("User API", func() {
 
 	//Login
 	It("should login with newly created user", func() {
-		postData := []byte(`{"username":"tariksetia","password":"1234"}`)
+		postData := []byte(`{"username":"AgarwalConsulting","password":"1234"}`)
 		req, _ := http.NewRequest("POST", "/v1/login", bytes.NewBuffer(postData))
 		response := httptest.NewRecorder()
 		var body map[string]interface{}
@@ -44,7 +44,7 @@ var _ = Describe("User API", func() {
 
 	//Login with wrong password
 	It("should login with wrong password", func() {
-		postData := []byte(`{"username":"tariksetia","password":"12354"}`)
+		postData := []byte(`{"username":"AgarwalConsulting","password":"12354"}`)
 		req, _ := http.NewRequest("POST", "/v1/login", bytes.NewBuffer(postData))
 		response := httptest.NewRecorder()
 		r.ServeHTTP(response, req)
@@ -53,7 +53,7 @@ var _ = Describe("User API", func() {
 
 	//try signup with existing user name
 	It("should try signup with existing user name", func() {
-		postData := []byte(`{"username":"tariksetia","password":"12354"}`)
+		postData := []byte(`{"username":"AgarwalConsulting","password":"12354"}`)
 		req, _ := http.NewRequest("POST", "/v1/signup", bytes.NewBuffer(postData))
 		response := httptest.NewRecorder()
 		r.ServeHTTP(response, req)

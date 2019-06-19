@@ -17,13 +17,13 @@ var _ = Describe("Offer-API-TEST", func() {
 
 	BeforeEach(func() {
 		//Create A user
-		postData := []byte(`{"username":"tariksetia","password":"1234"}`)
+		postData := []byte(`{"username":"AgarwalConsulting","password":"1234"}`)
 		req, _ := http.NewRequest("POST", "/v1/signup", bytes.NewBuffer(postData))
 		response := httptest.NewRecorder()
 		r.ServeHTTP(response, req)
 
 		//login with created user user
-		postData = []byte(`{"username":"tariksetia","password":"1234"}`)
+		postData = []byte(`{"username":"AgarwalConsulting","password":"1234"}`)
 		req, _ = http.NewRequest("POST", "/v1/login", bytes.NewBuffer(postData))
 		response = httptest.NewRecorder()
 		r.ServeHTTP(response, req)

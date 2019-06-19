@@ -1,7 +1,7 @@
 ################### Builder Stage  ######################################### 
 FROM golang:latest AS builder
 WORKDIR /go/src/
-RUN git clone https://github.com/tariksetia/go-auction-api.git
+RUN git clone https://github.com/AgarwalConsulting/go-auction-api.git
 RUN curl https://raw.githubusercontent.com/golang/dep/master/install.sh | sh
 RUN ls -l ./go-auction-api
 
